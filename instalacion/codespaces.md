@@ -29,4 +29,6 @@ Para el kit (clases 2 a 5), abrí los notebooks de `kit/notebooks/` desde el edi
   son sintéticos o están disfrazados.
 - **Velocidad.** No tiene GPU: cada turno del modelo puede tardar más que en una computadora con buena
   memoria.
+- **Tu trabajo.** Tu acceso al repositorio es de lectura: si querés guardar cambios con git, GitHub te
+  ofrece crear una copia propia (un *fork*); aceptá. Para las entregas, seguí lo que indique el docente.
 - **Si algo falló al crearlo**, corré en la terminal `bash .devcontainer/preparar.sh`.
