@@ -1,0 +1,14 @@
+# Lo que genera cada corrida: se queda en tu computadora
+runs/
+trazas/
+resultados/
+
+# Lo que entrega el docente durante el curso
+respuesta.json
+
+# Python, Jupyter y el sistema
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,19 @@
+{
+  "name": "Ciencia de Datos Agéntica y Defendible",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "16gb",
+    "storage": "32gb"
+  },
+  "postCreateCommand": "bash .devcontainer/preparar.sh",
+  "postStartCommand": "bash .devcontainer/iniciar.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python", "ms-toolsai.jupyter"]
+    },
+    "codespaces": {
+      "openFiles": ["instalacion/codespaces.md"]
+    }
+  }
+}
