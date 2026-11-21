@@ -18,8 +18,11 @@ LOCAL_MODELS = (MODEL, "qwen3.5:2b")
 API = "http://127.0.0.1:11434/api"
 OPTIONS = {"temperature": 0, "seed": 42, "num_ctx": 8192, "num_predict": 1200}
 KEEP_ALIVE = "30m"  # keep the model loaded through a class session
-QUESTION = "¿Los usuarios que recibieron una promoción retienen más? Analiza los datos y explica qué podemos concluir."
-FIELDS = ["user_id", "frequency_pre", "promo_received", "retained_30d"]
+QUESTION = "Marketing quiere saber si la promoción funcionó y si conviene dársela a todos los usuarios. Analiza los datos y responde."
+FIELDS = ["user_id", "city", "platform", "frequency_pre", "promo_received", "retained_30d"]
+BREAKDOWNS = ("overall", "city", "platform", "frequency_pre")
+CITIES = ("Montevideo", "Canelones", "Maldonado", "Salto", "Rivera")
+PLATFORMS = ("android", "ios", "web")
 BASE_PROMPT = """Eres un asistente de análisis de datos para un seminario universitario.
 Responde en español. Puedes llamar herramientas varias veces para consultar el CSV
 local. Usa sus resultados para las cifras; no inventes observaciones ni ejecuciones.
@@ -32,9 +35,9 @@ TOOLS = [
         "name": "inspect_data", "description": "Inspect CSV columns, row count and data-quality checks.",
         "parameters": {"type": "object", "properties": {}, "additionalProperties": False}}},
     {"type": "function", "function": {
-        "name": "summarize_retention", "description": "Compute retention counts and rates by promotion, optionally within pre-period frequency groups. No causal estimator.",
+        "name": "summarize_retention", "description": "Compute retention counts and rates by promotion, for all users or within the groups of one column. No causal estimator.",
         "parameters": {"type": "object", "properties": {
-            "breakdown": {"type": "string", "enum": ["overall", "frequency_pre"]}},
+            "breakdown": {"type": "string", "enum": list(BREAKDOWNS)}},
             "required": ["breakdown"], "additionalProperties": False}}}
 ]
 
@@ -72,7 +75,8 @@ def read_rows(path):
 def inspect_rows(rows):
     ids = [r.get("user_id", "") for r in rows]
     missing = sum(any(r.get(k) in (None, "") for k in FIELDS) for r in rows)
-    invalid = sum(r.get("frequency_pre") not in ("high", "low") or
+    invalid = sum(r.get("city") not in CITIES or r.get("platform") not in PLATFORMS or
+                  r.get("frequency_pre") not in ("high", "low") or
                   r.get("promo_received") not in ("0", "1") or
                   r.get("retained_30d") not in ("0", "1") or None in r for r in rows)
     duplicates = len(ids) - len(set(ids))
@@ -84,14 +88,14 @@ def inspect_rows(rows):
 
 def summarize(rows, breakdown):
     """Rows are counted as provided. Checked mode separately enforces unique users."""
-    if breakdown not in ("overall", "frequency_pre"):
-        raise ValueError("breakdown tiene que ser overall o frequency_pre")
+    if breakdown not in BREAKDOWNS:
+        raise ValueError("breakdown tiene que ser uno de: " + ", ".join(BREAKDOWNS))
     check = inspect_rows(rows)
     if not rows or check["missing_rows"] or check["invalid_rows"]:
         raise ValueError("No se puede resumir: datos vacíos, faltantes o valores inválidos")
     grouped = {}
     for row in rows:
-        segment = "all" if breakdown == "overall" else row["frequency_pre"]
+        segment = "all" if breakdown == "overall" else row[breakdown]
         key = (segment, int(row["promo_received"]))
         n, retained = grouped.get(key, (0, 0))
         grouped[key] = (n + 1, retained + int(row["retained_30d"]))
@@ -128,11 +132,11 @@ def describe_quality(quality):
 
 def print_table(summary, indent="      "):
     """A retention summary as a small table that reads on a projector."""
-    print(f"{indent}grupo   promoción  usuarios  retenidos  retención")
+    print(f"{indent}grupo        promoción  usuarios  retenidos  retención")
     for g in summary["groups"]:
         segment = {"all": "todos", "high": "alta", "low": "baja"}.get(g["segment"], g["segment"])
         promo = "sí" if g["promo_received"] == 1 else "no"
-        print(f"{indent}{segment:<7} {promo:<10} {g['n_rows']:>8} {g['retained']:>10} {g['retention_pct']:>9.1f}%")
+        print(f"{indent}{segment:<12} {promo:<10} {g['n_rows']:>8} {g['retained']:>10} {g['retention_pct']:>9.1f}%")
 
 
 def show_call(number, call, result):
@@ -286,15 +290,18 @@ def run(mode="basic", model=MODEL, data=None, question=QUESTION, verbose=True, o
     return {**result, "trace_file": str(path)}
 
 
-def inspect_cli(data):
+TABLE_TITLES = {"overall": "todos los usuarios", "city": "dentro de cada ciudad",
+                "platform": "dentro de cada plataforma", "frequency_pre": "dentro de cada frecuencia previa"}
+
+
+def inspect_cli(data, breakdown="all"):
     """Tool-only fallback: Python computes everything, no model involved."""
     rows = read_rows(data)
     print(f"Sin modelo: Python calcula directamente sobre {Path(data).name}.\n")
     print("Controles de datos:\n    " + describe_quality(inspect_rows(rows)))
-    print("\nRetención a 30 días por promoción, todos los usuarios:")
-    print_table(summarize(rows, "overall"), indent="    ")
-    print("\nRetención a 30 días por promoción, dentro de cada frecuencia previa:")
-    print_table(summarize(rows, "frequency_pre"), indent="    ")
+    for name in BREAKDOWNS if breakdown == "all" else (breakdown,):
+        print(f"\nRetención a 30 días por promoción, {TABLE_TITLES[name]}:")
+        print_table(summarize(rows, name), indent="    ")
 
 
 def main():
@@ -304,12 +311,13 @@ def main():
     parser.add_argument("--data", type=Path, default=ROOT / "data" / "retention.csv")
     parser.add_argument("--question", default=QUESTION)
     parser.add_argument("--check", action="store_true", help="Check Ollama and the model with one tiny generation")
-    parser.add_argument("--inspect", action="store_true", help="Run the two tools without an LLM")
+    parser.add_argument("--inspect", nargs="?", const="all", choices=("all",) + BREAKDOWNS, metavar="BREAKDOWN",
+                        help="Run the tools without an LLM: every table, or only one (overall, city, platform, frequency_pre)")
     args = parser.parse_args()
     if args.check:
         sys.exit(0 if check(args.model) else 1)
     elif args.inspect:
-        inspect_cli(args.data)
+        inspect_cli(args.data, args.inspect)
     else:
         result = run(args.mode, args.model, args.data, args.question)
         if result["status"] != "completed":

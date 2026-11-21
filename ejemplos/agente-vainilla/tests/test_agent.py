@@ -15,10 +15,18 @@ class AgentChecks(unittest.TestCase):
     def test_known_descriptive_answer(self):
         groups = agent.summarize(self.rows, "overall")["groups"]
         self.assertEqual([(g["n_rows"], g["retained"], g["retention_pct"]) for g in groups],
-                         [(200, 64, 32.0), (200, 136, 68.0)])
+                         [(500, 160, 32.0), (500, 340, 68.0)])
         stratified = agent.summarize(self.rows, "frequency_pre")["groups"]
         self.assertEqual([(g["n_rows"], g["retained"], g["retention_pct"]) for g in stratified],
-                         [(40, 32, 80.0), (160, 128, 80.0), (160, 32, 20.0), (40, 8, 20.0)])
+                         [(100, 80, 80.0), (400, 320, 80.0), (400, 80, 20.0), (100, 20, 20.0)])
+
+    def test_city_table(self):
+        """Per-city counts and rates, as the data were built."""
+        ciudades = {(g["segment"], g["promo_received"]): g for g in agent.summarize(self.rows, "city")["groups"]}
+        for ciudad in agent.CITIES:
+            self.assertGreater(ciudades[(ciudad, 1)]["retention_pct"] - ciudades[(ciudad, 0)]["retention_pct"], 30)
+        self.assertEqual((ciudades[("Rivera", 1)]["n_rows"], ciudades[("Rivera", 1)]["retention_pct"]), (20, 95.0))
+        self.assertEqual((ciudades[("Rivera", 0)]["n_rows"], ciudades[("Rivera", 0)]["retention_pct"]), (20, 15.0))
 
     def test_quality_rejects_duplicates_and_missing_values(self):
         self.assertTrue(agent.inspect_rows(self.rows)["passed"])
@@ -28,7 +36,7 @@ class AgentChecks(unittest.TestCase):
 
     def test_dispatch_rejects_unknown_tool_and_invalid_arguments(self):
         for call in [{"function": {"name": "exec", "arguments": {"code": "print(1)"}}},
-                     {"function": {"name": "summarize_retention", "arguments": {"breakdown": "city"}}},
+                     {"function": {"name": "summarize_retention", "arguments": {"breakdown": "age"}}},
                      {"function": {"name": "inspect_data", "arguments": {"path": "/tmp"}}},
                      {"function": {"name": "inspect_data", "arguments": "not json"}}]:
             self.assertIn("error", agent.dispatch(call, self.rows))

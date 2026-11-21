@@ -1,9 +1,9 @@
 # Entrega 1 · Contrato de tarea y diagrama del agente
 
-Clase 1 · en equipos de 3 · 10% de la nota
+Para antes de la clase 2 · en equipos de 3 · 10% de la nota
 
-La pregunta: **¿los usuarios que recibieron una promoción retienen más?**, con los datos y las
-herramientas del [Agente Vainilla](../ejemplos/agente-vainilla/).
+La pregunta: **marketing quiere saber si la promoción funcionó y si conviene dársela a todos los
+usuarios**, con los datos y las herramientas del [Agente Vainilla](../ejemplos/agente-vainilla/).
 
 ## Qué entregar
 

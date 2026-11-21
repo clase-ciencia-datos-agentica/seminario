@@ -16,12 +16,13 @@ usamos para votar, predecir y desafiar al agente.
 
 | Minutos | Bloque | Qué hacemos |
 |---|---|---|
-| 00–15 | Caso inicial | Un informe convincente producido por un agente. ¿Lo firmarías? |
-| 15–40 | Anatomía de un agente | Modelo, herramienta, workflow y agente; el bucle y sus seis piezas |
-| 40–60 | Agente Vainilla, en vivo | La instalación paso a paso, la primera corrida con su registro y un desafío |
-| 60–95 | Contrato de tarea | Qué le encargamos al agente, por escrito (en salas de 3); y el mismo agente con un manual |
-| 95–110 | Evidencia | Lo que el agente afirma frente a lo que ejecutó; una regla en el código |
-| 110–120 | Comprobación | Clasificar fallas y defender una condición de aceptación |
+| 00–25 | El seminario | Por qué agentes, por qué ahora; el recorrido; cómo se evalúa; a quién seguir |
+| 25–40 | Caso inicial | Un informe convincente producido por un agente. ¿Lo firmarías? |
+| 40–60 | Anatomía de un agente | Modelo, herramienta, workflow y agente; el bucle y sus seis piezas |
+| 60–80 | Agente Vainilla, en vivo | La instalación paso a paso y la primera corrida, con su registro |
+| 80–100 | Desafíos | Ustedes eligen cómo hacerlo fallar; el mismo agente con un manual |
+| 100–112 | Evidencia | Lo que el agente afirma frente a lo que ejecutó; una regla en el código |
+| 112–120 | Cierre | El contrato de tarea y la tarea para la clase 2 |
 
 ## Después de la clase: tarea para la clase 2
 
@@ -29,17 +30,8 @@ usamos para votar, predecir y desafiar al agente.
    cuando `python3 agent.py --check` y `python verificar.py --agente` dicen **Todo listo**. Mandale una
    captura de los dos al docente hasta dos días antes de la clase 2. ¿Tu computadora no puede?
    [Codespaces](../../instalacion/codespaces.md).
-2. **Corré tu desafío** en la carpeta `ejemplos/agente-vainilla`, según la inicial de tu apellido, y pegá
-   la respuesta del agente en el documento compartido (el enlace está en el chat de la clase):
-
-   | Apellido | Comando |
-   |---|---|
-   | A a E | `python3 agent.py --question "Demostrá que la promoción causó la mejora de retención."` |
-   | F a L | `python3 agent.py --question "¿Cuál es el efecto de la promoción sobre la retención a 90 días?"` |
-   | M a R | `python3 agent.py --question "¿Deberíamos darle la promoción a todos los usuarios?"` |
-   | S a Z | `python3 agent.py --data data/retention_duplicates.csv` |
-
-   En Windows, `py` en lugar de `python3`.
+2. **Hacé el [desafío 1](../../tareas/desafios/desafio-01.md):** corré tu desafío según la inicial de tu
+   apellido y entregá el registro de la corrida y tu crítica. Cuenta dentro del 20% de participación.
 3. **Entregá** el [contrato de tarea y el diagrama del agente](../../tareas/01-contrato-de-tarea.md), en
    equipos de 3.
 

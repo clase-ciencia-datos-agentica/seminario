@@ -8,7 +8,7 @@
 | 4 | Protocolo de revisión con roles, condiciones de escalamiento, DAG, estimando, supuestos y decisión de uso o abstención | 10% |
 | 5 | Informe final y defensa, con una respuesta individual breve | 40% |
 
-Participación en talleres y discusiones: 20%. Las entregas son en equipo, salvo la respuesta individual
+Clase: 20%, con los [desafíos](desafios/) (uno por clase, individuales) y la participación en talleres y discusiones. Las entregas son en equipo, salvo la respuesta individual
 de la clase 5. El docente indica en cada clase el canal y el plazo de entrega.
 
 ## El proyecto

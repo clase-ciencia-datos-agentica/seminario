@@ -46,14 +46,14 @@ Cada corrida deja su registro completo en `runs/`: qué pidió el modelo, qué l
 ## Qué hace y qué no
 
 El modelo puede pedir solo dos cosas: `inspect_data()`, que revisa los datos, y
-`summarize_retention(breakdown)`, que cuenta la retención por promoción, en total o dentro de cada
-frecuencia previa. Python hace las cuentas y le devuelve el resultado; el modelo decide qué pedir y cómo
+`summarize_retention(breakdown)`, que cuenta la retención por promoción, en total o dentro de los grupos
+de una columna: ciudad, plataforma o frecuencia previa. Python hace las cuentas y le devuelve el resultado; el modelo decide qué pedir y cómo
 contarlo. No ejecuta código propio ni sale a internet.
 
 Que el programa diga `completed` quiere decir que terminó con una respuesta, no que la respuesta sea
 correcta. Eso lo evaluamos en clase.
 
-Los datos (`data/`) son sintéticos: 400 usuarios construidos para el ejercicio.
+Los datos (`data/`) son sintéticos: 1.000 usuarios construidos para el ejercicio.
 
 ## Si tu computadora es más lenta
 

@@ -10,6 +10,8 @@ completo durante los 30 días posteriores; no hay censura en este ejercicio.
 | Campo | Definición | Momento |
 |---|---|---|
 | user_id | Identificador único del usuario | t0 |
+| city | Ciudad del usuario: Montevideo, Canelones, Maldonado, Salto o Rivera | t0 |
+| platform | Plataforma desde la que pide: android, ios o web | t0 |
 | frequency_pre | high = al menos 5 pedidos; low = menos de 5, en los 30 días anteriores | Antes de t0 |
 | promo_received | 1 = recibió una promoción en t0; 0 = no recibió | t0 |
 | retained_30d | 1 = al menos un pedido entre t0+1 y t0+30 días; 0 = ninguno | Después de t0 |
@@ -29,6 +31,10 @@ completo durante los 30 días posteriores; no hay censura en este ejercicio.
    extensiones predictivas, define el momento de disponibilidad de cada variable y
    separa entrenamiento y evaluación antes de seleccionar modelos.
 8. No inventes intervalos, valores p, bibliografía o resultados de métodos no ejecutados.
+9. Que una diferencia aparezca en todas las ciudades o plataformas no la vuelve causal ni
+   robusta: si los grupos difieren en composición dentro de cada segmento, la diferencia se repite.
+10. Desconfía de los segmentos chicos: una tasa sobre 20 usuarios puede ser ruido. Informa
+    siempre el denominador antes de destacar un segmento.
 
 ## Entrega
 

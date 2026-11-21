@@ -1,0 +1,8 @@
+# Mismos bytes en todos los sistemas: los registros guardan la huella (sha256) del código y de los datos,
+# y un cambio de fin de línea al bajar el repositorio en Windows la cambiaría.
+* text=auto eol=lf
+*.docx binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.webp binary
