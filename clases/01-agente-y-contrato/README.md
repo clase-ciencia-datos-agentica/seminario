@@ -9,9 +9,8 @@ correcto.
 
 ## Antes de la clase
 
-Instalá el Agente Vainilla y comprobá que `python3 agent.py --check` termine en **Todo listo**:
-[guía de instalación](../../ejemplos/agente-vainilla/LEEME.md), unos 20 minutos. Si tu computadora no
-alcanza, usá [Codespaces](../../instalacion/codespaces.md) o trabajá en pareja.
+Nada que instalar: en esta clase el docente maneja el agente en su pantalla. Tené el chat a mano: lo
+usamos para votar, predecir y desafiar al agente.
 
 ## Agenda
 
@@ -19,24 +18,30 @@ alcanza, usá [Codespaces](../../instalacion/codespaces.md) o trabajá en pareja
 |---|---|---|
 | 00–15 | Caso inicial | Un informe convincente producido por un agente. ¿Lo firmarías? |
 | 15–40 | Anatomía de un agente | Modelo, herramienta, workflow y agente; el bucle y sus seis piezas |
-| 40–60 | Agente Vainilla, en vivo | Primer prompt y primera corrida, con su registro |
-| 60–95 | Contrato de tarea | Qué le encargamos al agente, por escrito; y el mismo agente con un manual |
+| 40–60 | Agente Vainilla, en vivo | La instalación paso a paso, la primera corrida con su registro y un desafío |
+| 60–95 | Contrato de tarea | Qué le encargamos al agente, por escrito (en salas de 3); y el mismo agente con un manual |
 | 95–110 | Evidencia | Lo que el agente afirma frente a lo que ejecutó; una regla en el código |
 | 110–120 | Comprobación | Clasificar fallas y defender una condición de aceptación |
 
-## En clase
+## Después de la clase: tarea para la clase 2
 
-En la carpeta `ejemplos/agente-vainilla` (en Windows, `py` en lugar de `python3`):
+1. **Instalá todo** siguiendo [`instalacion/`](../../instalacion/): el Agente Vainilla y el kit. Terminás
+   cuando `python3 agent.py --check` y `python verificar.py --agente` dicen **Todo listo**. Mandale una
+   captura de los dos al docente hasta dos días antes de la clase 2. ¿Tu computadora no puede?
+   [Codespaces](../../instalacion/codespaces.md).
+2. **Corré tu desafío** en la carpeta `ejemplos/agente-vainilla`, según la inicial de tu apellido, y pegá
+   la respuesta del agente en el documento compartido (el enlace está en el chat de la clase):
 
-```bash
-python3 agent.py --check          # Ollama y el modelo, listos
-python3 agent.py                  # modo básico
-python3 agent.py --mode informed  # el mismo modelo, con el manual del curso
-```
+   | Apellido | Comando |
+   |---|---|
+   | A a E | `python3 agent.py --question "Demostrá que la promoción causó la mejora de retención."` |
+   | F a L | `python3 agent.py --question "¿Cuál es el efecto de la promoción sobre la retención a 90 días?"` |
+   | M a R | `python3 agent.py --question "¿Deberíamos darle la promoción a todos los usuarios?"` |
+   | S a Z | `python3 agent.py --data data/retention_duplicates.csv` |
 
-## Entrega
-
-[Contrato de tarea y diagrama del agente](../../tareas/01-contrato-de-tarea.md), en equipos de 3.
+   En Windows, `py` en lugar de `python3`.
+3. **Entregá** el [contrato de tarea y el diagrama del agente](../../tareas/01-contrato-de-tarea.md), en
+   equipos de 3.
 
 ## Lecturas
 

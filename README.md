@@ -19,12 +19,12 @@ computadora.
 
 Las diapositivas de cada clase se publican en su carpeta después de la clase.
 
-## Antes de la clase 1
+## Instalación
 
-1. Instalá el Agente Vainilla siguiendo [su guía](ejemplos/agente-vainilla/LEEME.md): Ollama, un modelo
-   abierto y Python. Unos 20 minutos, casi todos esperando la descarga.
-2. Comprobá que `python3 agent.py --check` termine en **Todo listo**.
-3. ¿Tu computadora no alcanza? Usalo sin instalar nada, en el navegador: [Codespaces](instalacion/codespaces.md).
+La clase 1 no requiere instalar nada: el docente maneja el agente en su pantalla. **Antes de la clase 2**,
+instalá todo siguiendo [`instalacion/`](instalacion/): el Agente Vainilla (Ollama, un modelo abierto y
+Python) y el kit. ¿Tu computadora no alcanza? Usalo sin instalar nada, en el navegador:
+[Codespaces](instalacion/codespaces.md).
 
 ## Qué hay en este repositorio
 

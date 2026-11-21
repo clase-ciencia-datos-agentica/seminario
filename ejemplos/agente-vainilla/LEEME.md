@@ -1,10 +1,10 @@
 # Agente Vainilla
 
 Un agente de IA que corre en tu computadora, gratis: un modelo abierto (Qwen3.5, de Alibaba) que sirve
-Ollama, dos herramientas de Python y un ciclo. Lo usamos en la clase 1 de Ciencia de Datos Agéntica y
-Defendible. No necesitás cuenta, tarjeta ni clave, y los datos no salen de tu computadora.
+Ollama, dos herramientas de Python y un ciclo. Lo vemos en vivo en la clase 1 de Ciencia de Datos
+Agéntica y Defendible, y lo instalás antes de la clase 2. No necesitás cuenta, tarjeta ni clave, y los datos no salen de tu computadora.
 
-## Antes de la clase
+## Instalación (antes de la clase 2)
 
 Unos 20 minutos, casi todos esperando la descarga del modelo. Hacelo en tu casa, con buena conexión.
 
@@ -32,7 +32,7 @@ No hay nada más que instalar: el agente usa solo la biblioteca estándar de Pyt
 carpeta a la ventana y apretá Enter. En Windows, abrí la carpeta, hacé clic derecho en un espacio vacío y
 elegí *Abrir en Terminal*.
 
-## En clase
+## Cómo se usa
 
 ```bash
 python3 agent.py                       # modo básico: la pregunta y dos herramientas

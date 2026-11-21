@@ -1,11 +1,13 @@
 # Instalación: el agente, gratis y en tu computadora
 
-Para la clase 1 necesitás tres cosas: **el kit con Python**, **Ollama** (el programa que corre modelos
+Para la clase 2 necesitás tres cosas: **el kit con Python**, **Ollama** (el programa que corre modelos
 de lenguaje en tu computadora) y **un modelo abierto**. Todo es gratis: no hace falta cuenta, tarjeta
 ni clave, y los datos nunca salen de tu computadora.
 
+**¿Ya instalaste el Agente Vainilla?** Entonces Ollama y el modelo ya están: hacé los pasos 1, 5 y 6.
+
 **Hacelo antes de la clase, con buena conexión:** el modelo pesa entre 3 y 4 GB. Calculá media hora.
-Si algo no funciona, traé la salida de `python verificar.py` a clase.
+Si algo no funciona, mandale al docente la salida de `python verificar.py`.
 
 ## Qué necesitás
 
@@ -15,7 +17,8 @@ Si algo no funciona, traé la salida de `python verificar.py` a clase.
 | Disco libre | 10 GB | 15 GB |
 | Sistema | macOS 14 (Sonoma), Windows 10 22H2 o Linux | |
 
-Si tu computadora no llega al mínimo, avisale al docente: vas a trabajar en pareja o con el simulador del kit.
+Si tu computadora no llega al mínimo, usá el curso desde el navegador con GitHub Codespaces (ver
+`instalacion/codespaces.md` en el repositorio del curso), o el simulador del kit.
 
 ## 1. Python y el kit
 
@@ -108,7 +111,7 @@ Sin ellas, el notebook usa el simulador. Ollama no usa clave: no hay nada secret
 | Muy lento (menos de 5 tokens por segundo) | Cerrá programas pesados (navegador, Teams) o usá `qwen3.5:2b`. `ollama ps` muestra si usa GPU o CPU. |
 | La computadora se tranca o el modelo se cierra | Falta memoria: usá `qwen3.5:2b`. |
 | PowerShell no deja activar el entorno | `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` y probá de nuevo. |
-| La descarga no avanza en la red de la facultad | Descargá desde tu casa. Si tu red usa proxy, configurá `HTTPS_PROXY`. |
+| La descarga no avanza | Probá con otra conexión. Si tu red usa proxy, configurá `HTTPS_PROXY`. |
 | Una celda del agente no termina | En Jupyter: *Kernel → Interrupt*. Ver la nota de abajo. |
 
 ## Antes de empezar, una advertencia
