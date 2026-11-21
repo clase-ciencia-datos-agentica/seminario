@@ -40,8 +40,7 @@ Las diapositivas de cada clase se publican en su carpeta después de la clase.
 
 ## Cómo usarlo
 
-- **Acceso:** el repositorio es privado. El docente te invita a la organización del curso con tu usuario
-  de GitHub; aceptá la invitación que te llega por correo (o en github.com) y entrá con tu usuario.
+- **Acceso:** abierto, sin invitación. Para Codespaces necesitás una cuenta de GitHub (es gratis).
 - **Descargar:** botón verde *Code* → *Download ZIP*. Con git: `git clone` y la dirección de este repositorio.
 - **Actualizar:** antes de cada clase, `git pull` (o volvé a descargar el ZIP). Si cambiaste archivos del
   repositorio, guardá tu trabajo en otra carpeta antes de actualizar.
