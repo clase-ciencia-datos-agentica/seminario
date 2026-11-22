@@ -7,7 +7,7 @@ una máquina de GitHub con este repositorio, Python, Ollama y el modelo ya insta
 
 1. Iniciá sesión en GitHub.
 2. En la página de este repositorio: botón verde *Code* → pestaña *Codespaces* → *Create codespace on main*.
-3. La primera vez tarda unos minutos: instala Ollama, baja el modelo (3 a 4 GB) y los paquetes del kit.
+3. La primera vez tarda unos minutos: instala Ollama, baja el modelo (1 GB) y los paquetes del kit.
    Esperá a que la terminal diga **Codespace listo**.
 4. En la terminal:
 

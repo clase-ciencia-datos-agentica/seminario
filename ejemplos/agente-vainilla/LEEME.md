@@ -6,14 +6,14 @@ Agéntica y Defendible, y lo instalás antes de la clase 2. No necesitás cuenta
 
 ## Instalación (antes de la clase 2)
 
-Unos 20 minutos, casi todos esperando la descarga del modelo. Hacelo en tu casa, con buena conexión.
+Unos 10 minutos, casi todos esperando la descarga del modelo. Hacelo en tu casa, con buena conexión.
 
 1. **Ollama.** Bajalo de [ollama.com/download](https://ollama.com/download): en macOS y Windows es una app;
    en Linux, `curl -fsSL https://ollama.com/install.sh | sh`. Instalalo y abrilo.
-2. **El modelo** (3,3 a 4 GB). En una terminal:
+2. **El modelo** (1 GB). En una terminal:
 
    ```bash
-   ollama pull qwen3.5:4b
+   ollama pull qwen3.5:0.8b
    ```
 
 3. **Python 3.9 o más nuevo.** Probá `python3 --version` (en Windows, `py --version`). Si no aparece una
@@ -55,10 +55,11 @@ correcta. Eso lo evaluamos en clase.
 
 Los datos (`data/`) son sintéticos: 1.000 usuarios construidos para el ejercicio.
 
-## Si tu computadora es más lenta
+## Según tu computadora
 
-Con 8 GB de RAM, `qwen3.5:4b` funciona si cerrás el navegador y otros programas pesados. Si igual va muy
-lento: `ollama pull qwen3.5:2b` y agregá `--model qwen3.5:2b` a cada comando.
+`qwen3.5:0.8b` es el más chico de la familia: anda en casi cualquier computadora. Si va lento, cerrá el
+navegador y otros programas pesados. Con 16 GB de RAM o más podés probar uno que se equivoca menos:
+`ollama pull qwen3.5:4b` (3,3 a 4 GB) y agregá `--model qwen3.5:4b` a cada comando.
 
 ## Si algo falla
 
@@ -67,9 +68,9 @@ lento: `ollama pull qwen3.5:2b` y agregá `--model qwen3.5:2b` a cada comando.
 | `python3: command not found`, o Windows abre la Microsoft Store | Instalá Python de python.org. En Windows usá `py` en lugar de `python3`. |
 | `ollama: command not found` | Abrí la app de Ollama una vez y después una terminal nueva. |
 | `No se pudo contactar Ollama` | Ollama no está abierto: abrí la app (en Linux, `ollama serve` en otra terminal). |
-| `Modelo no descargado` | `ollama pull qwen3.5:4b` |
+| `Modelo no descargado` | `ollama pull qwen3.5:0.8b` |
 | `can't open file 'agent.py'` | La terminal no está en la carpeta del agente: ver arriba cómo abrirla ahí. |
-| Cada turno tarda más de un minuto | Cerrá programas pesados o usá `qwen3.5:2b`. |
+| Cada turno tarda más de un minuto | Cerrá el navegador y otros programas pesados. |
 
 ## Opcional
 

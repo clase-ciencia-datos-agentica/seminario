@@ -2,7 +2,7 @@
 
 Elegí el proveedor con variables de entorno:
     LLM_PROVEEDOR = ollama | anthropic | openai | simulador
-    LLM_MODELO    = nombre del modelo (por ejemplo qwen3.5:4b o claude-haiku-5-5)
+    LLM_MODELO    = nombre del modelo (por ejemplo qwen3.5:0.8b o claude-haiku-5-5)
     LLM_BASE_URL  = opcional: otra dirección para Ollama, o un servidor compatible con OpenAI (vLLM, etc.)
 Las claves van en ANTHROPIC_API_KEY u OPENAI_API_KEY, nunca en el notebook. Ollama no usa clave.
 """
@@ -27,7 +27,7 @@ class Ollama:
                  max_tokens: int = 2048, pensar: bool | None = False, base_url: str | None = None):
         url = (base_url or os.environ.get("LLM_BASE_URL") or "http://localhost:11434").rstrip("/")
         self.url = url[:-3] if url.endswith("/v1") else url
-        self.nombre = modelo or os.environ.get("LLM_MODELO", "qwen3.5:4b")
+        self.nombre = modelo or os.environ.get("LLM_MODELO", "qwen3.5:0.8b")
         self.temperatura, self.contexto, self.max_tokens, self.pensar = temperatura, contexto, max_tokens, pensar
         self.tokens = {"entrada": 0, "salida": 0}
 

@@ -13,8 +13,8 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, ProxyHandler, build_opener
 
 ROOT = Path(__file__).resolve().parent
-MODEL = "qwen3.5:4b"
-LOCAL_MODELS = (MODEL, "qwen3.5:2b")
+MODEL = "qwen3.5:0.8b"
+LOCAL_MODELS = (MODEL, "qwen3.5:2b", "qwen3.5:4b")
 API = "http://127.0.0.1:11434/api"
 OPTIONS = {"temperature": 0, "seed": 42, "num_ctx": 8192, "num_predict": 1200}
 KEEP_ALIVE = "30m"  # keep the model loaded through a class session

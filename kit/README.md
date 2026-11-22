@@ -24,7 +24,7 @@ abierto. Instalalo según `INSTALACION.md` y, en la primera celda del notebook:
 
 ```python
 os.environ["LLM_PROVEEDOR"] = "ollama"
-os.environ["LLM_MODELO"] = "qwen3.5:4b"
+os.environ["LLM_MODELO"] = "qwen3.5:0.8b"
 ```
 
 No hay clave ni costo, y los datos no salen de tu computadora.
