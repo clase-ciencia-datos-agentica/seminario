@@ -3,7 +3,7 @@
     python verificar.py            # Python, paquetes, datos, Ollama y el modelo
     python verificar.py --agente   # además, el agente responde una pregunta de respuesta conocida
 
-Usa el modelo de LLM_MODELO (por defecto qwen3.5:0.8b). Los pasos de instalación están en INSTALACION.md.
+Usa el modelo de LLM_MODELO (por defecto qwen3.5:4b). Los pasos de instalación están en INSTALACION.md.
 """
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent
 sys.path.insert(0, str(RAIZ))
-MODELO = os.environ.get("LLM_MODELO", "qwen3.5:0.8b")
+MODELO = os.environ.get("LLM_MODELO", "qwen3.5:4b")
 URL = (os.environ.get("LLM_BASE_URL") or "http://localhost:11434").rstrip("/")
 URL = URL[:-3] if URL.endswith("/v1") else URL
 faltan: list[str] = []
@@ -66,13 +66,13 @@ def computadora_y_python() -> None:
     print("\n1. Tu computadora y Python")
     ram = ram_gb()
     if ram is None:
-        ojo("no pude medir la memoria; con menos de 8 GB, cerrá programas pesados")
+        ojo("no pude medir la memoria; con menos de 8 GB, usá qwen3.5:2b")
     elif ram < 7.5:
-        ojo(f"memoria: {ram:.0f} GB, menos de lo recomendado; cerrá programas pesados o usá Codespaces")
+        ojo(f"memoria: {ram:.0f} GB, menos de lo recomendado; usá qwen3.5:2b o trabajá en pareja")
     else:
-        ok(f"memoria: {ram:.0f} GB" + (" (te alcanza también para qwen3.5:4b)" if ram >= 15.5 else ""))
+        ok(f"memoria: {ram:.0f} GB" + (" (te alcanza también para qwen3.5:9b)" if ram >= 15.5 else ""))
     libre = shutil.disk_usage(Path.home()).free / 2**30
-    (ok if libre >= 3 else ojo)(f"disco libre: {libre:.0f} GB" + ("" if libre >= 3 else " (el modelo ocupa 1 GB)"))
+    (ok if libre >= 6 else ojo)(f"disco libre: {libre:.0f} GB" + ("" if libre >= 6 else " (el modelo ocupa 3 a 4 GB)"))
     v = sys.version_info
     if v >= (3, 9):
         ok(f"Python {v.major}.{v.minor}.{v.micro}")
@@ -124,7 +124,7 @@ def primer_prompt() -> None:
     if velocidad >= 5:
         ok(f"velocidad: {velocidad:.0f} tokens por segundo")
     else:
-        ojo(f"velocidad: {velocidad:.1f} tokens por segundo, lento para clase: cerrá programas pesados")
+        ojo(f"velocidad: {velocidad:.1f} tokens por segundo, lento para clase: cerrá programas o probá qwen3.5:2b")
 
 
 def agente() -> None:

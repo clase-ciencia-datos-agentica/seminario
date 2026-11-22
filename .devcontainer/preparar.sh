@@ -10,8 +10,8 @@ curl -fsSL https://ollama.com/install.sh | sh
 echo "== Arrancando Ollama"
 bash .devcontainer/iniciar.sh
 
-echo "== Bajando el modelo (1 GB)"
-ollama pull qwen3.5:0.8b
+echo "== Bajando el modelo (3 a 4 GB)"
+ollama pull qwen3.5:4b
 
 echo "== Instalando los paquetes del kit"
 pip install --user -r kit/requirements.txt
