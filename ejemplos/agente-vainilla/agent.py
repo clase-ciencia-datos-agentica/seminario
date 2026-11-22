@@ -283,7 +283,10 @@ def run(mode="basic", model=MODEL, data=None, question=QUESTION, verbose=True, o
     path = target / (datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S") + "_" + mode + "_" + uuid.uuid4().hex[:8] + ".json")
     path.write_text(json.dumps(trace, ensure_ascii=False, indent=2), encoding="utf-8")
     if verbose:
-        shown_path = path.relative_to(ROOT) if path.is_relative_to(ROOT) else path
+        try:  # not Path.is_relative_to: it needs Python 3.9, and conda's base is often 3.8
+            shown_path = path.relative_to(ROOT)
+        except ValueError:
+            shown_path = path
         print(f"\nEstado: {result['status']} ({STATUS[result['status']]}) · {trace['elapsed_seconds']:.0f} s")
         print(("\nRespuesta del agente:\n" if result["status"] == "completed" else "\n") + result["answer"])
         print(f"\nRegistro: {shown_path}")
