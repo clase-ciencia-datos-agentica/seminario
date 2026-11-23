@@ -18,10 +18,10 @@ comentar o preguntar.
 |---|---|---|
 | 00–15 | Bienvenida | Presentaciones y expectativas; cómo trabajamos, las cinco clases, la evaluación y este repositorio |
 | 15–27 | Caso inicial | Un resultado convincente sobre una promoción. ¿Lo firmarías? |
-| 27–47 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? Un turno y el bucle |
-| 47–65 | Demostración guiada | Una corrida del agente y su registro, en la pantalla del docente |
-| 65–85 | Discusión de evidencia | El informe del caso, auditado con su registro |
-| 85–110 | Contrato de tarea | El contrato, armado en pantalla; una regla en el prompt y otra en el código |
+| 27–45 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? Un turno, el bucle y el registro |
+| 45–75 | Demostración guiada | Cinco corridas del agente, en la pantalla del docente: básica, su registro, sin modelo, con un manual y con controles |
+| 75–92 | Discusión de evidencia | Lo que vimos, y el informe del caso auditado con su registro |
+| 92–110 | Contrato de tarea | El contrato, armado en pantalla con lo que vimos |
 | 110–120 | Comprobación de aprendizaje | Qué le podemos decir a Marketing, y lo que sigue |
 
 ## Para la clase 2
