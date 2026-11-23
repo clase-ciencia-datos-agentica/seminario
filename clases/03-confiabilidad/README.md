@@ -23,9 +23,7 @@ estable y qué incertidumbre no está cuantificada.
 
 ## Entrega
 
-Tablero de corridas repetidas con baseline, tasa de éxito, diagnósticos y tabla de sensibilidad; todas
-las corridas quedan registradas. La dispersión entre ejecuciones no se presenta como intervalo de
-confianza ni como probabilidad de que la conclusión sea verdadera.
+Corta, en equipos de 3, sobre corridas repetidas. Se publica con la clase.
 
 ## Lecturas
 

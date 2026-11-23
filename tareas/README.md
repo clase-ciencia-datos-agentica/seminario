@@ -1,25 +1,36 @@
 # Entregas y evaluación
 
-| Clase | Entrega | Peso |
+| | Qué | Peso |
 |---|---|---|
-| 1 | [Contrato de tarea y diagrama del agente](01-contrato-de-tarea.md), con entradas, herramientas permitidas, límites, registros y criterios de aceptación; en clase | 10% |
-| 2 | Herramientas con controles de integridad y leakage, consultas SQL, registro de llamadas del agente y manifiesto del entorno | 10% |
-| 3 | Tablero de corridas repetidas con baseline, tasa de éxito, diagnósticos y tabla de sensibilidad; todas las corridas quedan registradas | 10% |
-| 4 | Protocolo de revisión con roles, condiciones de escalamiento, DAG, estimando, supuestos y decisión de uso o abstención | 10% |
-| 5 | Informe final con protocolo de evaluación, resultados por tipo de falla, costos, evidencia reproducible y decisión de uso o abstención; defensa, con una respuesta individual breve | 40% |
+| Entregas | Cuatro entregas cortas, una por clase de la 1 a la 4 | 40% (10% cada una) |
+| Clase | Participación en talleres y discusiones, con un [desafío](desafios/) individual por clase | 20% |
+| Final | Tu propio caso de negocio, en la clase 5 | 40% |
 
-Clase: 20%, la participación en talleres y discusiones, con los [desafíos](desafios/) (uno por clase, individuales). Las entregas son en equipos de 3, salvo la
-respuesta individual de la clase 5. El docente indica en cada clase el canal y el plazo de entrega.
+Con una clase cada dos días, lo que queda para la casa no pasa de un par de horas.
 
-**Carga fuera de clase:** con una clase cada dos días, lo que queda para la casa no pasa de un par de horas.
-Lo que se evalúa se hace, en lo posible, en clase.
+## Las entregas
 
-## El proyecto
+| Clase | Entrega |
+|---|---|
+| 1 | [Instalar y leer](01-instalar-y-leer.md): instalar el modelo, hacerle una pregunta y leer un extracto. Individual |
+| 2 | Corta, en equipos de 3, sobre las herramientas del agente. Se publica con la clase |
+| 3 | Corta, en equipos de 3, sobre corridas repetidas. Se publica con la clase |
+| 4 | Corta, en equipos de 3, sobre la revisión de una recomendación del agente. Se publica con la clase |
 
-Un agente para un caso de uso concreto, el mismo durante las cinco clases. Cada equipo conserva su agente
-inicial y lo compara con su versión final usando el mismo modelo, datos, presupuesto y criterios. Las
-corridas fallidas también se registran y se entregan. Cuando la evidencia no identifica un efecto,
-abstenerse es un resultado correcto.
+## El final: tu propio caso de negocio
+
+En equipos de 3. Elijan una pregunta de negocio y unos datos para responderla, y hagan lo mismo que
+hacemos en la clase 1 con el caso de marketing:
+
+1. Escriban el contrato de tarea y corran un agente básico.
+2. Refuércenlo: contexto (un manual del caso) y controles en el código.
+3. Audítenlo con el registro: qué afirmó, qué ejecutó y qué se sostiene.
+4. Comparen el agente inicial con el reforzado, con el mismo modelo, los mismos datos y las mismas
+   preguntas. Las corridas fallidas también se entregan.
+
+En la clase 5 presentan el informe y lo defienden, con una respuesta individual breve. Si sus datos son
+privados, usen una versión sintética, como la de la clase 1. Cuando la evidencia no alcanza para
+afirmar un efecto, abstenerse es un resultado correcto.
 
 ## Condiciones de aceptación
 
@@ -27,7 +38,7 @@ Un resultado inventado, una fuga del conjunto reservado o una afirmación causal
 obliga a corregir esa parte antes de aceptar el trabajo. Una puntuación alta en otras dimensiones no
 compensa esa falla. Se evalúa la calidad del juicio y de la evidencia, además del rendimiento numérico.
 
-## Rúbrica del informe final
+## Rúbrica del final
 
 | Dimensión | Puntos | Evidencia esperada |
 |---|---|---|

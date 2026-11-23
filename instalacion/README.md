@@ -2,8 +2,8 @@
 
 **Para la clase 1:** nada. El docente maneja el agente en su pantalla.
 
-**Para la clase 2 (unos 30 minutos):** Ollama, el modelo y una pregunta de prueba. Los pasos están en la
-[página de la clase 1](../clases/01-agente-y-contrato/#tarea-para-la-clase-2--unos-30-minutos).
+**Para la clase 2:** Ollama, el modelo y una pregunta de prueba. Los pasos están en la
+[entrega 1](../tareas/01-instalar-y-leer.md).
 
 Lo que haga falta después (Python y el código del curso) se publica acá antes de la clase que lo use.
 

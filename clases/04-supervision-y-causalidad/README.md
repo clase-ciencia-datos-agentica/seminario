@@ -23,9 +23,7 @@ respuesta correcta sea abstenerse.
 
 ## Entrega
 
-Protocolo de revisión con roles, condiciones de escalamiento, DAG, estimando, supuestos y decisión de uso
-o abstención. Ajustar muchas variables, obtener buen balance o pasar un placebo no se presenta como prueba
-de ausencia de confusión no observada.
+Corta, en equipos de 3, sobre la revisión de una recomendación del agente. Se publica con la clase.
 
 ## Lecturas
 

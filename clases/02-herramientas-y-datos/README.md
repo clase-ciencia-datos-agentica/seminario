@@ -8,8 +8,8 @@ tratar las instrucciones dentro de los datos como contenido no autorizado.
 
 ## Antes de la clase
 
-La [tarea de la clase 1](../01-agente-y-contrato/#tarea-para-la-clase-2--unos-30-minutos): Ollama, el modelo
-y una pregunta, con la captura de la respuesta. Lo demás que haga falta instalar se publica acá antes de la
+La [entrega 1](../../tareas/01-instalar-y-leer.md): Ollama, el modelo y una pregunta, con la captura de la respuesta,
+y una lectura. Lo demás que haga falta instalar se publica acá antes de la
 clase.
 
 ## Agenda
@@ -29,9 +29,7 @@ reproducir la ejecución a partir de la traza.
 
 ## Entrega
 
-Herramientas con controles de integridad y leakage, consultas SQL, registro de llamadas del agente y
-manifiesto del entorno. Las pruebas tienen que fallar ante los errores sembrados y pasar tras
-corregirlos: ejecutar sin errores no basta.
+Corta, en equipos de 3, sobre las herramientas del agente. Se publica con la clase.
 
 ## Lecturas
 

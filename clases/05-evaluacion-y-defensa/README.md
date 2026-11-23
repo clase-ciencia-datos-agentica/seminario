@@ -21,9 +21,9 @@ El equipo revisor verifica al menos un cálculo y un supuesto; los fallos tambi�
 
 ## Entrega
 
-Informe final con protocolo de evaluación, resultados por tipo de falla, costos, evidencia reproducible y
-decisión de uso o abstención. Un reporte persuasivo no compensa una falla crítica. Rúbrica en
-[`tareas/`](../../tareas/).
+El final: su propio caso de negocio, con sus datos, el agente reforzado con contexto y controles, y su
+auditoría con el registro, como en la clase 1. Informe y defensa, con una respuesta individual breve.
+Detalle y rúbrica en [`tareas/`](../../tareas/#el-final-tu-propio-caso-de-negocio).
 
 ## Lecturas
 

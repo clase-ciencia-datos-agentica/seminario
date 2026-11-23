@@ -1,4 +1,7 @@
-# Contrato de tarea · plantilla
+# Contrato de tarea · plantilla del taller
+
+Clase 1, en la sala, en equipos de 3: uno escribe, otro dibuja el diagrama y otro revisa que cada criterio
+se pueda comprobar con un registro. Es práctica: no se entrega.
 
 > Lo escribe el equipo **antes** de pedirle nada al agente: qué le encargamos, con qué puede trabajar,
 > dónde tiene que parar y qué tiene que mostrar para que aceptemos su respuesta.
