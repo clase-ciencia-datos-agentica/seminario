@@ -1,25 +1,22 @@
-# Desafío 1 · ¿La respuesta se sostiene con el registro?
+# Desafío 1 · ¿Está bien la respuesta?
 
-En clase · individual · en el chat · cuenta dentro del 20% de participación.
+Después de la clase 1 · individual · cuenta dentro del 20% de participación
 
-No hay nada para hacer en casa: el desafío se hace durante la primera corrida del Agente Vainilla, que el
-docente maneja en pantalla.
+Ponés a prueba al modelo que instalaste: le hacés una pregunta y juzgás su respuesta.
 
 ## Qué hacer
 
-Cuando el agente termina de responder:
+1. Seguí los pasos de [instalar, preguntar y leer](../01-instalar-y-leer.md) hasta hacerle la pregunta del
+   lavadero.
+2. Mandá la **captura** de la respuesta, con **una línea tuya**: ¿está bien? ¿Por qué?
 
-1. Elegí **una cifra** de la respuesta del agente.
-2. Buscá arriba, en lo que devolvió Python, **la tabla que permite verificarla**.
-3. Escribí en el chat tres cosas: la cifra, la tabla, y **si la respalda o no**.
-
-Por ejemplo: «68% · tabla general, con promoción, 340 de 500 · la respalda».
+Hasta la noche anterior a la clase 2, por el canal que indique el docente.
 
 ## Cómo se corrige
 
 | Qué miramos | |
 |---|---|
-| Participaste en el chat | La cifra, la tabla y tu veredicto |
-| La verificación es correcta | Si la tabla respalda la cifra, o si la cifra no sale de ninguna tabla |
+| La mandaste | La captura muestra una respuesta del modelo |
+| Tu línea la juzga | Decís si está bien, con una razón |
 
-Si la respuesta del agente está bien, también vale: mostrá qué tabla la respalda.
+No hay una respuesta única: en la clase 2 comparamos las capturas de todos.

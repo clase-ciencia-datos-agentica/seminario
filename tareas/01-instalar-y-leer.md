@@ -1,6 +1,6 @@
-# Entrega 1 · Instalar y leer
+# Desafío 1 y entrega 1 · Instalar, preguntar y leer
 
-Individual · para la clase 2 · una hora, casi toda de descarga y lectura · 10%
+Individual · para la clase 2 · una hora, casi toda de descarga y lectura
 
 1. **Instalá Ollama** desde [ollama.com/download](https://ollama.com/download) y abrilo.
 2. **Bajá el modelo** (3 a 4 GB, con buena conexión):
@@ -28,8 +28,9 @@ Individual · para la clase 2 · una hora, casi toda de descarga y lectura · 10
 
 Hasta la noche anterior a la clase 2, por el canal que indique el docente:
 
-- La **captura** de la respuesta del modelo, con una línea tuya: ¿está bien? ¿Por qué?
-- Una línea sobre la lectura: **una idea que te llevás**.
+- La **captura** de la respuesta del modelo, con una línea tuya: ¿está bien? ¿Por qué? Es el
+  [desafío 1](desafios/desafio-01.md), dentro del 20% de participación.
+- Una línea sobre la lectura: **una idea que te llevás**. Con la instalación, es la entrega 1 (10%).
 
 ¿Tu computadora no puede correr el modelo? Avisale al docente; también podés usar
 [Codespaces](../instalacion/codespaces.md).

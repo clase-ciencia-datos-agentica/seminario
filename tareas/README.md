@@ -12,7 +12,7 @@ Con una clase cada dos días, lo que queda para la casa no pasa de un par de hor
 
 | Clase | Entrega |
 |---|---|
-| 1 | [Instalar y leer](01-instalar-y-leer.md): instalar el modelo, hacerle una pregunta y leer un extracto. Individual |
+| 1 | [Instalar y leer](01-instalar-y-leer.md): instalar el modelo y leer un extracto. Individual. Va junto con el desafío 1 (la captura) |
 | 2 | Corta, en equipos de 3, sobre las herramientas del agente. Se publica con la clase |
 | 3 | Corta, en equipos de 3, sobre corridas repetidas. Se publica con la clase |
 | 4 | Corta, en equipos de 3, sobre la revisión de una recomendación del agente. Se publica con la clase |

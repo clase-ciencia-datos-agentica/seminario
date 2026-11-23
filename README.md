@@ -9,8 +9,8 @@ confiar en lo que devuelve. Todo es gratis y corre en tu computadora.
 
 1. **[Clase 1](clases/01-agente-y-contrato/):** qué hacemos en clase. Para la clase 1 no hace falta instalar
    ni descargar nada.
-2. **[La entrega 1, para la clase 2](tareas/01-instalar-y-leer.md):** instalar un modelo, hacerle una
-   pregunta y leer un extracto. Una hora, individual.
+2. **[Para la clase 2](tareas/01-instalar-y-leer.md):** instalar un modelo, hacerle una pregunta y mandar
+   la captura (el desafío 1), y leer un extracto (la entrega 1). Una hora, individual.
 
 ## Las cinco clases
 

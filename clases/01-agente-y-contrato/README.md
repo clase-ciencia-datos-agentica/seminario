@@ -4,36 +4,34 @@
 
 **Al terminar vas a poder:** distinguir modelo, herramienta, workflow y agente; describir el bucle de un
 agente (estado, herramientas, observaciones, presupuesto y condición de parada); escribir un caso de uso
-como contrato de tarea; reconocer que una explicación convincente no demuestra que un resultado sea
-correcto.
+como contrato de tarea; usar el registro para comprobar qué calculó el agente y distinguir una comparación
+descriptiva de una afirmación causal.
 
 ## Antes de la clase
 
-Nada que instalar: en esta clase el docente maneja el agente en su pantalla. Tené el chat a mano: lo
-usamos para votar, predecir y desafiar al agente.
+Nada que instalar: en esta clase el docente maneja el agente en su pantalla. Tené el chat a mano para
+comentar o preguntar.
 
 ## Agenda
 
 | Minutos | Bloque | Qué hacemos |
 |---|---|---|
 | 00–15 | Bienvenida | Presentaciones y expectativas; cómo trabajamos, las cinco clases, la evaluación y este repositorio |
-| 15–27 | Caso inicial | Un informe convincente sobre una promoción. ¿Lo firmarías? |
-| 27–47 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? El bucle y sus piezas |
-| 47–65 | Demostración guiada | Una corrida del agente y su registro. **Desafío 1**, en el chat |
-| 65–97 | Contrato de tarea | Un manual, una regla en el código y un taller para escribir el contrato, en equipos de 3 |
-| 97–110 | Discusión de evidencia | Lo que el agente afirmó frente a lo que ejecutó |
-| 110–120 | Comprobación de aprendizaje | Clasificar fallas, defender una condición de aceptación, y la entrega 1 |
+| 15–27 | Caso inicial | Un resultado convincente sobre una promoción. ¿Lo firmarías? |
+| 27–47 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? Un turno y el bucle |
+| 47–65 | Demostración guiada | Una corrida del agente y su registro, en la pantalla del docente |
+| 65–85 | Discusión de evidencia | El informe del caso, auditado con su registro |
+| 85–110 | Contrato de tarea | El contrato, armado en pantalla; una regla en el prompt y otra en el código |
+| 110–120 | Comprobación de aprendizaje | Qué le podemos decir a Marketing, y lo que sigue |
 
-## En clase
+## Para la clase 2
 
-- **[Desafío 1](../../tareas/desafios/desafio-01.md):** individual, en el chat, durante la primera corrida.
-- **Taller del contrato:** en equipos de 3, con la [plantilla](plantilla-contrato.md). Es práctica: no se
-  entrega.
+[Instalar, preguntar y leer](../../tareas/01-instalar-y-leer.md): instalar el modelo, hacerle una pregunta y
+mandar la captura (el [desafío 1](../../tareas/desafios/desafio-01.md)), y leer un extracto (con la
+instalación, la entrega 1). Individual, una hora, hasta la noche anterior a la clase 2.
 
-## Entrega 1 · para la clase 2
-
-[Instalar y leer](../../tareas/01-instalar-y-leer.md): instalar el modelo, hacerle una pregunta y leer un
-extracto. Individual, una hora, hasta la noche anterior a la clase 2.
+El contrato que armamos en clase sigue esta [plantilla](plantilla-contrato.md): es también el punto de
+partida de tu proyecto final.
 
 ## Lecturas
 

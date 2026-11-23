@@ -1,11 +1,11 @@
 # Desafíos
 
-Uno por clase, en clase: frente a una corrida del agente, explicás con el registro qué se sostiene y qué no
-de su respuesta. Son individuales, cortos, y cuentan dentro del 20% de participación.
+Uno por clase, individual y corto: ponés a prueba al modelo o al agente y decís qué se sostiene. Cuentan
+dentro del 20% de participación.
 
 | Desafío | Clase | Cuándo |
 |---|---|---|
-| [1 · ¿La respuesta se sostiene con el registro?](desafio-01.md) | 1 | En clase, en el chat |
+| [1 · ¿Está bien la respuesta?](desafio-01.md) | 1 | Después de la clase: una captura y una línea |
 
 Los desafíos de las clases 2 a 4 se publican con cada clase.
 
