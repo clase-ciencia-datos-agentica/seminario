@@ -1,25 +1,29 @@
 # Entrega 1 · Contrato de tarea y diagrama del agente
 
-Para antes de la clase 2 · en equipos de 3 · 10% de la nota
+En clase · en equipos de 3 · unos 18 minutos · 10% de la nota
 
-La pregunta: **marketing quiere saber si la promoción funcionó y si conviene dársela a todos los
-usuarios**, con los datos y las herramientas del [Agente Vainilla](../ejemplos/agente-vainilla/).
+Se escribe en el taller «Escriban el contrato del agente» de la clase 1 y se entrega antes de terminar la
+clase, por el canal que indique el docente, con los tres nombres. No queda nada para la casa.
+
+El caso: **marketing vuelve a preguntar si debe extender la promoción**, con los datos y las herramientas
+del agente que vemos en clase. Escriben el contrato **antes** de correr el agente.
 
 ## Qué entregar
 
-1. **El contrato de tarea**, en la plantilla
-   [`ejemplos/agente-vainilla/contrato.md`](../ejemplos/agente-vainilla/contrato.md): pregunta, población y
-   período, métrica, herramientas permitidas, límites y presupuesto, artefactos, inferencias permitidas,
-   cuándo detenerse o escalar, criterios de aceptación y arquitectura.
-2. **El diagrama del agente**: entradas, herramientas, ciclo, registros y salida. Marquen qué pasos hace el
-   código y cuáles decide el modelo. Una foto del dibujo alcanza.
+1. **El contrato**, en la [plantilla](plantilla-contrato.md): pregunta, población y período, métrica,
+   herramientas permitidas, límites, registros, inferencias permitidas, cuándo detenerse o pedir ayuda, y
+   al menos dos criterios de aceptación.
+2. **El diagrama del agente**, la última pieza de la plantilla: de las entradas a la respuesta, marcando en
+   cada caja si la resuelve el código o la decide el modelo. Sirve una foto de un dibujo a mano.
+
+Unas pocas líneas por pieza alcanzan: es un borrador, y el contrato se afina en las próximas clases.
 
 ## Cómo se evalúa
 
-- **Verificable:** cada sección se puede comprobar mirando el registro de una corrida (`runs/*.json`).
-  "Que el análisis esté bien" no se puede comprobar; "cada número de la respuesta aparece en un resultado
-  del registro", sí.
-- **Completo:** cubre las diez piezas de la plantilla, incluidas las inferencias permitidas y cuándo
-  detenerse.
-- **Honesto con los datos:** no promete lo que los datos no pueden dar.
-- **Arquitectura clara:** se distingue qué hace el código y qué decide el modelo.
+- **Verificable:** otra persona, con el registro de una corrida en la mano, puede decir si cada criterio
+  se cumplió. «Que el análisis esté bien» no se puede comprobar; «cada número de la respuesta aparece en
+  un resultado del registro», sí.
+- **Completo:** están las diez piezas de la plantilla.
+- **Honesto con los datos:** no promete lo que los datos no pueden dar, y distingue verificar una cifra de
+  autorizar una afirmación causal.
+- **El diagrama** separa lo que hace el código de lo que decide el modelo.

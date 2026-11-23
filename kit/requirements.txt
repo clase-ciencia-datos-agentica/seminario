@@ -1,8 +1,0 @@
-pandas>=2.0
-numpy>=1.26
-statsmodels>=0.14
-scikit-learn>=1.4
-matplotlib>=3.8
-jupyter
-anthropic   # si usás modelos de Anthropic
-openai      # si usás OpenAI o un servidor compatible (Ollama, vLLM)

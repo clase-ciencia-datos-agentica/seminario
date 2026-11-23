@@ -1,12 +1,11 @@
 # Desafíos
 
-Uno por clase: corrés el agente en un caso pensado para hacerlo fallar, guardás el registro de la corrida y
-explicás qué no se puede aceptar de su respuesta. Son individuales y cuentan dentro del 20% de
-participación.
+Uno por clase, en clase: frente a una corrida del agente, explicás con el registro qué se sostiene y qué no
+de su respuesta. Son individuales, cortos, y cuentan dentro del 20% de participación.
 
-| Desafío | Clase | Para entregar antes de |
+| Desafío | Clase | Cuándo |
 |---|---|---|
-| [1 · Hacé fallar al Agente Vainilla](desafio-01.md) | 1 | la clase 2 |
+| [1 · ¿La respuesta se sostiene con el registro?](desafio-01.md) | 1 | En clase, en el chat |
 
 Los desafíos de las clases 2 a 4 se publican con cada clase.
 

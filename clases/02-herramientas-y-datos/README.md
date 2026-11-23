@@ -8,10 +8,9 @@ tratar las instrucciones dentro de los datos como contenido no autorizado.
 
 ## Antes de la clase
 
-Desde esta clase el agente escribe y ejecuta su propio código, en tu computadora. Instalá todo siguiendo
-[`instalacion/`](../../instalacion/): el Agente Vainilla y el kit. Terminás cuando `python3 agent.py --check` y
-`python verificar.py --agente` dicen **Todo listo**. Y corré tu desafío de la
-[clase 1](../01-agente-y-contrato/): abrimos la clase con las respuestas de todos.
+La [tarea de la clase 1](../01-agente-y-contrato/#tarea-para-la-clase-2--unos-30-minutos): Ollama, el modelo
+y una pregunta, con la captura de la respuesta. Lo demás que haga falta instalar se publica acá antes de la
+clase.
 
 ## Agenda
 

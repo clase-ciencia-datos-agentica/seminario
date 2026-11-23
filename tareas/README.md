@@ -2,14 +2,17 @@
 
 | Clase | Entrega | Peso |
 |---|---|---|
-| 1 | [Contrato de tarea y diagrama del agente](01-contrato-de-tarea.md) | 10% |
+| 1 | [Contrato de tarea y diagrama del agente](01-contrato-de-tarea.md), con entradas, herramientas permitidas, límites, registros y criterios de aceptación; en clase | 10% |
 | 2 | Herramientas con controles de integridad y leakage, consultas SQL, registro de llamadas del agente y manifiesto del entorno | 10% |
-| 3 | Tablero de corridas repetidas con baseline, tasa de éxito, diagnósticos y tabla de sensibilidad | 10% |
+| 3 | Tablero de corridas repetidas con baseline, tasa de éxito, diagnósticos y tabla de sensibilidad; todas las corridas quedan registradas | 10% |
 | 4 | Protocolo de revisión con roles, condiciones de escalamiento, DAG, estimando, supuestos y decisión de uso o abstención | 10% |
-| 5 | Informe final y defensa, con una respuesta individual breve | 40% |
+| 5 | Informe final con protocolo de evaluación, resultados por tipo de falla, costos, evidencia reproducible y decisión de uso o abstención; defensa, con una respuesta individual breve | 40% |
 
-Clase: 20%, con los [desafíos](desafios/) (uno por clase, individuales) y la participación en talleres y discusiones. Las entregas son en equipo, salvo la respuesta individual
-de la clase 5. El docente indica en cada clase el canal y el plazo de entrega.
+Clase: 20%, la participación en talleres y discusiones, con los [desafíos](desafios/) (uno por clase, individuales). Las entregas son en equipos de 3, salvo la
+respuesta individual de la clase 5. El docente indica en cada clase el canal y el plazo de entrega.
+
+**Carga fuera de clase:** con una clase cada dos días, lo que queda para la casa no pasa de un par de horas.
+Lo que se evalúa se hace, en lo posible, en clase.
 
 ## El proyecto
 

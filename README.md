@@ -1,59 +1,51 @@
 # Ciencia de Datos Agéntica y Defendible
 
-Seminario · Universidad de Montevideo · Juan Franceschini
+Seminario · Universidad de Montevideo · cinco clases de dos horas · Juan Franceschini
 
 Construimos, evaluamos y supervisamos un agente de IA que analiza datos, y aprendemos a decidir cuándo
-confiar en lo que devuelve. El eje es la confiabilidad: resultados cuya medición, código, supuestos,
-incertidumbre y evidencia otra persona pueda revisar. Todo corre gratis, con modelos abiertos en tu
-computadora.
+confiar en lo que devuelve. Todo es gratis y corre en tu computadora.
 
-## Clases
+## Empezá acá
 
-| | Clase | Pregunta | Para trabajar |
+1. **[Clase 1](clases/01-agente-y-contrato/):** qué hacemos en clase y la tarea para la clase 2. Para la
+   clase 1 no hace falta instalar ni descargar nada.
+2. **[La tarea para la clase 2](clases/01-agente-y-contrato/#tarea-para-la-clase-2--unos-30-minutos):**
+   instalar un modelo y hacerle una pregunta. Unos 30 minutos.
+
+## Las cinco clases
+
+| | Clase | Pregunta | Entrega (en equipos de 3) |
 |---|---|---|---|
-| 01 | [De un prompt a un agente auditable](clases/01-agente-y-contrato/) | ¿Qué evidencia necesitamos para confiar en un resultado? | [Agente Vainilla](ejemplos/agente-vainilla/) · [entrega 1](tareas/01-contrato-de-tarea.md) |
-| 02 | [Herramientas, datos y límites del agente](clases/02-herramientas-y-datos/) | ¿Qué puede hacer el agente con los datos y cómo sabemos que lo hizo bien? | [kit](kit/) |
-| 03 | [Confiabilidad entre corridas](clases/03-confiabilidad/) | ¿El agente llega a la misma conclusión si lo ejecutamos de nuevo? | [kit](kit/) |
-| 04 | [Supervisión humana y afirmaciones causales](clases/04-supervision-y-causalidad/) | ¿La recomendación corresponde a un efecto identificado? | [kit](kit/) |
-| 05 | [Evaluar y defender un agente confiable](clases/05-evaluacion-y-defensa/) | ¿El sistema resiste una evaluación independiente? | [kit](kit/) |
+| 1 | [De un prompt a un agente auditable](clases/01-agente-y-contrato/) | ¿Qué evidencia necesitamos para confiar en un resultado? | Contrato de tarea y diagrama del agente |
+| 2 | [Herramientas, datos y límites del agente](clases/02-herramientas-y-datos/) | ¿Qué puede hacer el agente con los datos y cómo sabemos que lo hizo bien? | Herramientas con controles y trazas |
+| 3 | [Confiabilidad entre corridas](clases/03-confiabilidad/) | ¿El agente llega a la misma conclusión si lo ejecutamos de nuevo? | Corridas repetidas y sensibilidad |
+| 4 | [Supervisión humana y afirmaciones causales](clases/04-supervision-y-causalidad/) | ¿La recomendación corresponde a un efecto identificado? | Protocolo de revisión y abstención |
+| 5 | [Evaluar y defender un agente confiable](clases/05-evaluacion-y-defensa/) | ¿El sistema resiste una evaluación independiente? | Informe y defensa final |
 
-Las diapositivas de cada clase se publican en su carpeta después de la clase.
+Las diapositivas y el código de cada clase se publican en su carpeta cuando hacen falta.
 
-## Instalación
+## Cómo se evalúa
 
-La clase 1 no requiere instalar nada: el docente maneja el agente en su pantalla. **Antes de la clase 2**,
-instalá todo siguiendo [`instalacion/`](instalacion/): el Agente Vainilla (Ollama, un modelo abierto y
-Python) y el kit. ¿Tu computadora no alcanza? Usalo sin instalar nada, en el navegador:
-[Codespaces](instalacion/codespaces.md).
+| | Peso |
+|---|---|
+| Entregas de las clases 1 a 4, en equipos de 3, hechas en clase | 40% (10% cada una) |
+| Participación en talleres y discusiones, con un desafío individual por clase | 20% |
+| Informe y defensa final en la clase 5, con una respuesta individual | 40% |
+
+Lo que queda para la casa no pasa de un par de horas por clase. Detalle y rúbrica en [`tareas/`](tareas/).
 
 ## Qué hay en este repositorio
 
-| Carpeta | Contenido |
+| Carpeta | Qué encontrás |
 |---|---|
+| [`clases/`](clases/) | Una página por clase: agenda, tarea y lecturas |
+| [`tareas/`](tareas/) | Las entregas, la plantilla del contrato, los desafíos y la rúbrica |
+| [`instalacion/`](instalacion/) | Qué instalar, y la opción sin instalar nada |
+| [`referencias/`](referencias/) | Las lecturas, con enlace a su fuente |
 | [`programa/`](programa/) | El programa del seminario |
-| [`clases/`](clases/) | Una carpeta por clase: pregunta, objetivos, agenda, lecturas y, después de la clase, las diapositivas |
-| [`ejemplos/`](ejemplos/) | Código y datos que corremos en clase. `agente-vainilla/` es el agente de la clase 1 |
-| [`kit/`](kit/) | El kit de las clases 2 a 5: el agente que escribe su propio código, los notebooks y los datos |
-| [`tareas/`](tareas/) | Las entregas, sus plantillas y cómo se evalúan |
-| [`instalacion/`](instalacion/) | Qué instalar para cada clase, y la opción sin instalar nada |
-| [`referencias/`](referencias/) | Las lecturas, con enlaces a su fuente |
-
-## Cómo usarlo
-
-- **Acceso:** abierto, sin invitación. Para Codespaces necesitás una cuenta de GitHub (es gratis).
-- **Descargar:** botón verde *Code* → *Download ZIP*. Con git: `git clone` y la dirección de este repositorio.
-- **Actualizar:** antes de cada clase, `git pull` (o volvé a descargar el ZIP). Si cambiaste archivos del
-  repositorio, guardá tu trabajo en otra carpeta antes de actualizar.
-- **Sin instalar nada:** *Code* → *Codespaces* → *Create codespace on main*. Ver [instalacion/codespaces.md](instalacion/codespaces.md).
-
-## Evaluación
-
-Entregas de las clases 1 a 4 (10% cada una), participación en talleres y discusiones (20%) e informe y
-defensa final en la clase 5 (40%). Detalle, rúbrica y condiciones de aceptación en [`tareas/`](tareas/).
 
 ## Créditos
 
-Las diapositivas usan imágenes e ideas de Pepe Alonso, *From Zero to AI Agents* (Berkeley Haas), con su
-permiso. El modelo de las clases es Qwen3.5 (Alibaba, licencia Apache 2.0), servido con
-[Ollama](https://ollama.com). Los datos del Agente Vainilla son sintéticos; los del kit vienen de un
-programa de empleo y están disfrazados para el curso.
+Algunas ideas de las clases vienen de Pepe Alonso, *From Zero to AI Agents* (Berkeley Haas), con su
+permiso. El modelo es Qwen3.5 (Alibaba, licencia Apache 2.0), servido con [Ollama](https://ollama.com).
+Los datos de la clase 1 son sintéticos.

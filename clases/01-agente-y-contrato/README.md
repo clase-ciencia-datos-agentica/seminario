@@ -16,28 +16,54 @@ usamos para votar, predecir y desafiar al agente.
 
 | Minutos | Bloque | Qué hacemos |
 |---|---|---|
-| 00–25 | El seminario | Por qué agentes, por qué ahora; el recorrido; cómo se evalúa; a quién seguir |
-| 25–40 | Caso inicial | Un informe convincente producido por un agente. ¿Lo firmarías? |
-| 40–60 | Anatomía de un agente | Modelo, herramienta, workflow y agente; el bucle y sus seis piezas |
-| 60–80 | Agente Vainilla, en vivo | La instalación paso a paso y la primera corrida, con su registro |
-| 80–100 | Desafíos | Ustedes eligen cómo hacerlo fallar; el mismo agente con un manual |
-| 100–112 | Evidencia | Lo que el agente afirma frente a lo que ejecutó; una regla en el código |
-| 112–120 | Cierre | El contrato de tarea y la tarea para la clase 2 |
+| 00–15 | Bienvenida | Presentaciones y expectativas; cómo trabajamos, las cinco clases, la evaluación y este repositorio |
+| 15–27 | Caso inicial | Un informe convincente sobre una promoción. ¿Lo firmarías? |
+| 27–47 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? El bucle y sus piezas |
+| 47–65 | Demostración guiada | Una corrida del agente y su registro. **Desafío 1**, en el chat |
+| 65–97 | Contrato de tarea | Un manual, una regla en el código y las piezas del contrato. **Entrega 1**, en equipos de 3 |
+| 97–110 | Discusión de evidencia | Lo que el agente afirmó frente a lo que ejecutó |
+| 110–120 | Comprobación de aprendizaje | Clasificar fallas, defender una condición de aceptación, y la tarea |
 
-## Después de la clase: tarea para la clase 2
+## En clase
 
-1. **Instalá todo** siguiendo [`instalacion/`](../../instalacion/): el Agente Vainilla y el kit. Terminás
-   cuando `python3 agent.py --check` y `python verificar.py --agente` dicen **Todo listo**. Mandale una
-   captura de los dos al docente hasta dos días antes de la clase 2. ¿Tu computadora no puede?
-   [Codespaces](../../instalacion/codespaces.md).
-2. **Hacé el [desafío 1](../../tareas/desafios/desafio-01.md):** corré tu desafío según la inicial de tu
-   apellido y entregá el registro de la corrida y tu crítica. Cuenta dentro del 20% de participación.
-3. **Entregá** el [contrato de tarea y el diagrama del agente](../../tareas/01-contrato-de-tarea.md), en
-   equipos de 3.
+- **[Desafío 1](../../tareas/desafios/desafio-01.md):** individual, en el chat, durante la primera corrida.
+- **[Entrega 1](../../tareas/01-contrato-de-tarea.md):** el contrato de tarea y el diagrama del agente, en
+  equipos de 3, con la [plantilla](../../tareas/plantilla-contrato.md). Se entrega antes de terminar la clase.
 
-## Lecturas
+No queda nada de esto para la casa.
 
-Extractos, 25 a 35 minutos.
+## Tarea para la clase 2 · unos 30 minutos
+
+Con una clase cada dos días, lo que queda para la casa es corto. Esta vez, casi todo es esperar la descarga.
+
+1. **Instalá Ollama** desde [ollama.com/download](https://ollama.com/download) y abrilo.
+2. **Bajá el modelo** (3 a 4 GB, con buena conexión):
+
+   ```bash
+   ollama pull qwen3.5:4b
+   ```
+
+3. **Hacele una pregunta.** Abrí el modelo, apagá el razonamiento visible y preguntale:
+
+   ```bash
+   ollama run qwen3.5:4b
+   ```
+
+   ```text
+   /set nothink
+   Quiero lavar el auto. El lavadero está a 100 metros. ¿Voy caminando o en auto?
+   ```
+
+   `/bye` para salir.
+4. **Mandale al docente una captura** de la respuesta, con una línea tuya: ¿está bien? ¿Por qué? Hasta la
+   noche anterior a la clase 2.
+
+Nada más: Python y lo demás lo instalamos juntos en la clase 2. ¿Tu computadora no puede?
+Avisale al docente; también podés usar [Codespaces](../../instalacion/codespaces.md).
+
+## Lecturas opcionales
+
+Para quien quiera profundizar; no son obligatorias. Extractos, 25 a 35 minutos.
 
 - Shunyu Yao et al. (2023). [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629). *ICLR*. Introducción y patrón de interacción.
 - Sayash Kapoor et al. (2025). [AI Agents That Matter](https://arxiv.org/abs/2407.01502). *Transactions on Machine Learning Research*. Problemas de evaluación.
@@ -51,4 +77,4 @@ Para ampliar:
 
 ## Materiales
 
-Las diapositivas y el caso inicial se publican en esta carpeta después de la clase.
+Las diapositivas, el caso inicial y el código del agente se publican en esta carpeta después de la clase.

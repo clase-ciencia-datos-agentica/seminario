@@ -1,8 +1,7 @@
 # Referencias
 
-Todas se leen gratis en su fuente original: este repositorio tiene los enlaces, no los PDF. Los códigos
-entre corchetes son los del programa del curso. `referencias.bib` tiene la bibliografía completa para un
-gestor de referencias.
+Todas se leen gratis en su fuente original: acá están los enlaces. Son opcionales: las ideas necesarias se
+ven en clase. Los códigos entre corchetes son los del programa.
 
 ## Las seis referencias clave
 
