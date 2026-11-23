@@ -3,8 +3,7 @@
 > ¿Qué evidencia necesitamos para confiar en un resultado?
 
 **Al terminar vas a poder:** distinguir modelo, herramienta, workflow y agente; describir el bucle de un
-agente (estado, herramientas, observaciones, presupuesto y condición de parada); escribir un caso de uso
-como contrato de tarea; usar el registro para comprobar qué calculó el agente y distinguir una comparación
+agente (estado, herramientas, observaciones, presupuesto y condición de parada); usar el registro para comprobar qué calculó el agente y distinguir una comparación
 descriptiva de una afirmación causal.
 
 ## Antes de la clase
@@ -18,11 +17,10 @@ comentar o preguntar.
 |---|---|---|
 | 00–15 | Bienvenida | Presentaciones y expectativas; cómo trabajamos, las cinco clases, la evaluación y este repositorio |
 | 15–27 | Caso inicial | Un resultado convincente sobre una promoción. ¿Lo firmarías? |
-| 27–45 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? Un turno, el bucle y el registro |
-| 45–75 | Demostración guiada | Cinco corridas del agente, en la pantalla del docente: básica, su registro, sin modelo, con un manual y con controles |
-| 75–92 | Discusión de evidencia | Lo que vimos, y el informe del caso auditado con su registro |
-| 92–110 | Contrato de tarea | El contrato, armado en pantalla con lo que vimos |
-| 110–120 | Comprobación de aprendizaje | Qué le podemos decir a Marketing, y lo que sigue |
+| 27–47 | Anatomía del agente | Chat, workflow y agente: ¿quién decide el próximo paso? Un turno, el bucle y el registro |
+| 47–82 | Demostración guiada | Las opciones del agente y cinco corridas, en la pantalla del docente: básica, su registro, sin modelo, con un manual y con controles |
+| 82–105 | Discusión de evidencia | Lo que vimos, y el informe del caso auditado con su registro |
+| 105–120 | Comprobación de aprendizaje | Qué le podemos decir a Marketing, lo que sigue y preguntas |
 
 ## Para la clase 2
 
@@ -30,8 +28,7 @@ comentar o preguntar.
 mandar la captura (el [desafío 1](../../tareas/desafios/desafio-01.md)), y leer un extracto (con la
 instalación, la entrega 1). Individual, una hora, hasta la noche anterior a la clase 2.
 
-El contrato que armamos en clase sigue esta [plantilla](plantilla-contrato.md): es también el punto de
-partida de tu proyecto final.
+Para tu proyecto final vas a escribir un contrato de tarea: esta es la [plantilla](plantilla-contrato.md).
 
 ## Lecturas
 

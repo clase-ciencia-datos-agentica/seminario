@@ -1,7 +1,6 @@
 # Contrato de tarea · plantilla
 
-En la clase 1 la completamos en pantalla para el caso de marketing. Para tu proyecto final, es el punto de
-partida.
+El punto de partida de tu proyecto final.
 
 > Lo escribe el equipo **antes** de pedirle nada al agente: qué le encargamos, con qué puede trabajar,
 > dónde tiene que parar y qué tiene que mostrar para que aceptemos su respuesta.
