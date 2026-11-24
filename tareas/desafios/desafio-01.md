@@ -10,7 +10,7 @@ Ponés a prueba al modelo que instalaste: le hacés una pregunta y juzgás su re
    lavadero.
 2. Mandá la **captura** de la respuesta, con **una línea tuya**: ¿está bien? ¿Por qué?
 
-Hasta la noche anterior a la clase 2, por el canal que indique el docente.
+Antes de la clase 2 (el miércoles), por el portal UM.
 
 ## Cómo se corrige
 

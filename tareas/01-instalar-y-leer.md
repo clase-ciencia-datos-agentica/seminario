@@ -26,7 +26,7 @@ Individual · para la clase 2 · una hora, casi toda de descarga y lectura
 
 ## Qué mandar
 
-Hasta la noche anterior a la clase 2, por el canal que indique el docente:
+Antes de la clase 2 (el miércoles), por el portal UM:
 
 - La **captura** de la respuesta del modelo, con una línea tuya: ¿está bien? ¿Por qué? Es el
   [desafío 1](desafios/desafio-01.md), dentro del 20% de participación.

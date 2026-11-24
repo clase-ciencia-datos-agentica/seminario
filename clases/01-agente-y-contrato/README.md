@@ -26,7 +26,7 @@ comentar o preguntar.
 
 [Instalar, preguntar y leer](../../tareas/01-instalar-y-leer.md): instalar el modelo, hacerle una pregunta y
 mandar la captura (el [desafío 1](../../tareas/desafios/desafio-01.md)), y leer un extracto (con la
-instalación, la entrega 1). Individual, una hora, hasta la noche anterior a la clase 2.
+instalación, la entrega 1). Individual, una hora, antes de la clase 2 (el miércoles), por el portal UM.
 
 Para tu proyecto final vas a escribir un contrato de tarea: esta es la [plantilla](plantilla-contrato.md).
 
@@ -46,4 +46,9 @@ Para ampliar, opcionales:
 
 ## Materiales
 
-Las diapositivas, el caso inicial y el código del agente se publican en esta carpeta después de la clase.
+- **Las diapositivas:** [en PDF](diapositivas.pdf), para leerlas acá mismo, o [en HTML](diapositivas.html),
+  para bajarlas (botón *Download raw file*) y abrirlas en el navegador.
+- **El caso inicial:** [el informe](caso-inicial/informe.md) que auditamos en clase y
+  [su registro](caso-inicial/registro.json).
+- **El Agente Vainilla**, el de la demostración: [`ejemplos/agente-vainilla`](../../ejemplos/agente-vainilla/).
+  Correrlo en tu computadora es opcional; las instrucciones están en su [LEEME](../../ejemplos/agente-vainilla/LEEME.md).

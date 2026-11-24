@@ -7,10 +7,10 @@ confiar en lo que devuelve. Todo es gratis y corre en tu computadora.
 
 ## Empezá acá
 
-1. **[Clase 1](clases/01-agente-y-contrato/):** qué hacemos en clase. Para la clase 1 no hace falta instalar
-   ni descargar nada.
+1. **[Clase 1](clases/01-agente-y-contrato/):** las diapositivas, el caso inicial y el agente de la
+   demostración.
 2. **[Para la clase 2](tareas/01-instalar-y-leer.md):** instalar un modelo, hacerle una pregunta y mandar
-   la captura (el desafío 1), y leer un extracto (la entrega 1). Una hora, individual.
+   la captura (el desafío 1), y leer un extracto (la entrega 1). Una hora, individual, antes de la clase 2 (el miércoles), por el portal UM.
 
 ## Las cinco clases
 
