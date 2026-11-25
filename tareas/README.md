@@ -3,7 +3,7 @@
 | | Qué | Peso |
 |---|---|---|
 | Entregas | Cuatro entregas cortas, una por clase de la 1 a la 4 | 40% (10% cada una) |
-| Clase | Participación en talleres y discusiones, con un [desafío](desafios/) individual por clase | 20% |
+| Clase | Participación en talleres y discusiones, con el [desafío](desafios/) de la clase 1 | 20% |
 | Final | Tu propio caso de negocio, en la clase 5 | 40% |
 
 Con una clase cada dos días, lo que queda para la casa no pasa de un par de horas.
@@ -13,7 +13,7 @@ Con una clase cada dos días, lo que queda para la casa no pasa de un par de hor
 | Clase | Entrega |
 |---|---|
 | 1 | [Instalar y leer](01-instalar-y-leer.md): instalar el modelo y leer un extracto. Individual. Va junto con el desafío 1 (la captura) |
-| 2 | Corta, en equipos de 3, sobre las herramientas del agente. Se publica con la clase |
+| 2 | [Repetir la demo y leer](02-repetir-la-demo-y-leer.md): instalar DuckDB, repetir los pasos de la demo de la clase 2 y leer un extracto. Mandás una captura del último paso y una línea. Individual |
 | 3 | Corta, en equipos de 3, sobre corridas repetidas. Se publica con la clase |
 | 4 | Corta, en equipos de 3, sobre la revisión de una recomendación del agente. Se publica con la clase |
 

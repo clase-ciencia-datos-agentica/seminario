@@ -1,17 +1,16 @@
 # Desafíos
 
-Uno por clase, individual y corto: ponés a prueba al modelo o al agente y decís qué se sostiene. Cuentan
-dentro del 20% de participación.
+Individuales y cortos: ponés a prueba al modelo o al agente y decís qué se sostiene. Cuentan dentro del
+20% de participación.
 
 | Desafío | Clase | Cuándo |
 |---|---|---|
 | [1 · ¿Está bien la respuesta?](desafio-01.md) | 1 | Después de la clase: una captura y una línea |
 
-Los desafíos de las clases 2 a 4 se publican con cada clase.
+La clase 2 no tiene desafío aparte: su entrega ya es repetir la demo. Si hay desafíos en las clases 3 y 4, se publican con cada clase.
 
-## Por qué el registro
+## Qué se manda
 
-Cada corrida deja un registro en `runs/` con la pregunta, cada pedido del agente, cada resultado y la
-respuesta, más la huella (sha256) del código y de los datos. Es tu prueba de que corriste el agente oficial
-con los datos oficiales: **no lo edites**. Los registros se controlan automáticamente; tu crítica la corrige
-el docente.
+Lo que pide cada desafío, por el portal UM, antes de la clase siguiente: hasta ahora, una captura con una
+línea tuya. Si un desafío pide el registro de una corrida (`runs/`), mandalo sin
+editar: lleva la huella (sha256) del código y de los datos, y es tu prueba de que corriste el agente oficial.

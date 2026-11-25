@@ -7,17 +7,18 @@ confiar en lo que devuelve. Todo es gratis y corre en tu computadora.
 
 ## Empezá acá
 
-1. **[Clase 1](clases/01-agente-y-contrato/):** las diapositivas, el caso inicial y el agente de la
-   demostración.
-2. **[Para la clase 2](tareas/01-instalar-y-leer.md):** instalar un modelo, hacerle una pregunta y mandar
-   la captura (el desafío 1), y leer un extracto (la entrega 1). Una hora, individual, antes de la clase 2 (el miércoles), por el portal UM.
+1. **[Clase 2](clases/02-herramientas-y-datos/):** las diapositivas, el caso inicial y el agente de la
+   demostración. Lo de la clase 1 sigue en [su carpeta](clases/01-agente-y-contrato/).
+2. **[Para la clase 3](tareas/02-repetir-la-demo-y-leer.md):** instalar DuckDB, repetir los pasos de la
+   demo de la clase 2 y leer un extracto (la entrega 2). Mandás una captura del último paso y una línea
+   sobre la lectura. Una hora, individual, antes de la clase 3, por el portal UM.
 
 ## Las cinco clases
 
 | | Clase | Pregunta | Entrega |
 |---|---|---|---|
 | 1 | [De un prompt a un agente auditable](clases/01-agente-y-contrato/) | ¿Qué evidencia necesitamos para confiar en un resultado? | Instalar y leer (individual) |
-| 2 | [Herramientas, datos y límites del agente](clases/02-herramientas-y-datos/) | ¿Qué puede hacer el agente con los datos y cómo sabemos que lo hizo bien? | Corta, sobre las herramientas |
+| 2 | [Herramientas, datos y límites del agente](clases/02-herramientas-y-datos/) | ¿Qué puede hacer el agente con los datos y cómo sabemos que lo hizo bien? | Instalar DuckDB, consultar y leer (individual) |
 | 3 | [Confiabilidad entre corridas](clases/03-confiabilidad/) | ¿El agente llega a la misma conclusión si lo ejecutamos de nuevo? | Corta, sobre corridas repetidas |
 | 4 | [Supervisión humana y afirmaciones causales](clases/04-supervision-y-causalidad/) | ¿La recomendación corresponde a un efecto identificado? | Corta, sobre una revisión |
 | 5 | [Evaluar y defender un agente confiable](clases/05-evaluacion-y-defensa/) | ¿El sistema resiste una evaluación independiente? | El final: tu propio caso de negocio |
@@ -47,4 +48,4 @@ Lo que queda para la casa no pasa de un par de horas por clase. Detalle y rúbri
 
 Algunas ideas de las clases vienen de Pepe Alonso, *From Zero to AI Agents* (Berkeley Haas), con su
 permiso. El modelo es Qwen3.5 (Alibaba, licencia Apache 2.0), servido con [Ollama](https://ollama.com).
-Los datos de la clase 1 son sintéticos.
+Las consultas corren en [DuckDB](https://duckdb.org) (licencia MIT). Los datos de las clases son sintéticos.
